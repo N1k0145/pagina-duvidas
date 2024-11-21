@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">      
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+          <a class="logo" href="Home.html"><img src="../logo/Logo.png" class="logoIMG">Care Tones</a>
+          <ul class="nav-list">
+            <li><a href="visualizarConsultas.php" class="nav">Agenda</a></li>
+            <li><a href="visualizarDuvidas.php" class="nav">Dúvidas</a></li>
+            <li><a href="../avaliacoes/avaliacoes.php" class="nav">Avaliações</a></li>
+            <li><a href="../agendamento/agendamentoAtendente.php" class="nav">Agendar Consulta</a></li>
+            <li><a href="../esteticista/esteticistas.php" class="nav">Esteticistas</a></li>
+          </ul>
+          <div class="dropdown">
+            <div class="login-icon">
+                <a href="perfilAtendente.php">
+                <i class="fa-solid fa-circle-user fa-xl" style="color: #fff;"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="perfilAtendente.php"><i class="fa-solid fa-right-to-bracket" style="color: #cf6f7a;"></i> Perfil </a>
+                    <a href="../esteticista/cadastroEsteticistaAtendente.php"><i class="fa-solid fa-address-card" style="color: #cf6f7a;"></i> Cadastrar Esteticista </a>
+                    <a href="../cliente/cadastrarClienteAtendente.php"><i class="fa-solid fa-address-card" style="color: #cf6f7a;"></i> Cadastrar Cliente </a>
+                    <a href="../procedimento/cadastrarProcedimento.php"><i class="fa-solid fa-address-card" style="color: #cf6f7a;"></i> Cadastrar Procedimento </a>
+                </div>
+            </div>
+         </div>
+         <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        </nav>
+      </header>
     <button>Voltar</button>
     <div><h2>Duvida de Paula</h2>
     <h4 style="text-align: center;">
@@ -16,7 +46,7 @@
         3º Consulta<br>
     </h4>
     <h4 id="titulo">Duvida</h4>
-    <input type="text">
+    <textarea type="text" class="caixa-de-duvidas" placeholder="Eu tenho uma dúvida sobre..."></textarea>
     </div>
     <div style="justify-content: center;"><button id="botao">Responder</button></div>
 </body>
